@@ -45,7 +45,8 @@ Once the connection to the Central Device Management is successful, the "ONL" LE
 ### Step 2 - Linking the CloudRAIL.Box to the Device Management Cloud
 
 1. First time users need to create a new account on [Device Management Cloud](https://devices.cloudrail.com/signup ) by filling out all necessary details.
-2. Once logged in, click on "Connect New Box" and enter the serial number of CloudRAIL.Box. The number is on a label located on the right side of the CloudRAIL.Box.
+2. Once logged in, click on "Connect New Box" and enter the serial number of CloudRAIL.Box. The number is on a label located on the right side of the 	CloudRAIL.Box.
+
 ![alt text](images/SerialNumber.png)
 
 3. By default the CloudRAIL.box uses DHCP to get an IP address. If DHCP is not available in your network, please add the Box to the Device Management Cloud, select it and click on "Advanced Network Settings" to set the network configuration manually.
