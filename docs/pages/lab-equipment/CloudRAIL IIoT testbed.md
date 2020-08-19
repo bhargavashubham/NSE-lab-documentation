@@ -102,7 +102,9 @@ There are two ways to add a device in the Device Management Cloud for Azure IoT 
 1. In order to use the Credential Manager, we need to generate an API token. Once you reach the Dashboard of the IoT Central Application, click on "Administration", followed by "API token" and then click on "Generate Token".
 2. Enter your "Token name: and Select "Admin" or "Builder" as Role. 
 3. Click on "Generate button" and save the token somewhere securely as it will be later used in the Credential Manager.
-4. 
+4. Now we also need the Subdomain and Central DNS. To find these, go to "Administration", followed by "Your application". Subdomain is the Application URL and Central DNS by default is azureiotcentral.com
+5. Now go to the "Credentials Manager", click on "Add Credentials" and select the prefered Cloud Platform from the drop down list which in our case is the Azure IoT Central.
+6. 
 
 ## Possible attacks
 
@@ -120,8 +122,3 @@ There are two ways to add a device in the Device Management Cloud for Azure IoT 
 4. [Quick Start Guide CloudRail.Box](https://cloudrail.com/quick-start-guide/)
 5. [Linking Cloud Platform to the Device Management Cloud](https://devices.cloudrail.com/documentation)
 
-
-	data["Threshold_measure"] = 0.0
- 	if (data["Temperature_C"] >= 25.0) {
-    	data["Threshold_measure"] = 25.0
-    }
