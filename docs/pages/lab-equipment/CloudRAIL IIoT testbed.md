@@ -95,16 +95,23 @@ The chosen Cloud Platform her eis Microsoft Azure. There is no specific motivati
 6. The IoT Central Application should look this (below). Now you are ready to use IoT Central with the Management Cloud.
 ![alt text](images/IoTCentralApplication.png)
 
-#### Adding the device
+#### Saving credentials
 There are two ways to add a device in the Device Management Cloud for Azure IoT Central - Saving credentials (Preferred) and Without Saving credentials. Saving credentials allows us to easily and quickly add devices to the Azure IoT Central without entering other details again and again. The credentials will be stored in the Credential Manager as depicted below -
 ![alt text](images/CredentialManager.png)
 
 1. In order to use the Credential Manager, we need to generate an API token. Once you reach the Dashboard of the IoT Central Application, click on "Administration", followed by "API token" and then click on "Generate Token".
 2. Enter your "Token name: and Select "Admin" or "Builder" as Role. 
 3. Click on "Generate button" and save the token somewhere securely as it will be later used in the Credential Manager.
-4. Now we also need the Subdomain and Central DNS. To find these, go to "Administration", followed by "Your application". Subdomain is the Application URL and Central DNS by default is azureiotcentral.com
-5. Now go to the "Credentials Manager", click on "Add Credentials" and select the prefered Cloud Platform from the drop down list which in our case is the Azure IoT Central.
-6. 
+4. We also need the Subdomain and Central DNS. To find these, go to "Administration", followed by "Your application". Subdomain is the Application URL and Central DNS by default is azureiotcentral.com
+5. Go to the "Credentials Manager", click on "Add Credentials" and select the prefered Cloud Platform from the drop down list which in our case is the Azure IoT Central.
+6. Fill in the details and save it. The credentials can later be viewed, edited or deleted as per the need.
+![alt text](images/CredentialLabel.png)
+
+
+#### Adding the device
+1. To add a device, we got back to "My Boxes" and click on "New Connection" of the respective box. 
+2. The Box configuration should automatically detect a Temperature Sensor at Port 1. Chose "Temperature: TN7511" and click on Next Step button. 
+3. The next section allows us to chose at what frequency should the sensor send data to the cloud, either at a specified interval or when there is a change. 
 
 ## Possible attacks
 
