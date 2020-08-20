@@ -141,6 +141,7 @@ One can also deploy an edge function in the CloudRAIL box to peform lightweight 
 ## Future Works
 
 1. Building an industrial physical process scenario: It is equally important to use a real physical process so that impacts are directly visible and the researcher or student has enough time to execute his attacks and to observe the effects. One can use the [Punching Machine with Conveyor Belt 24V - Simulation](https://www.fischertechnik.de/en/products/simulating/training-models/96785-sim-punching-machine-with-conveyor-belt-24v-simulation) which consists of a conveyor belt, two light-barrier, two limit-switches and two motors which can be connected with a PLC control 24V. 
+
 ![alt text](images/ConveyerBelt.png)
 
 2. Industrial Retrofitting: The current setup has only one sensor. The future versions can have additional sensors to gather more data for IIoT applications like condition monitoring or preditive maintenance. They are completely separated from the actual production environment as they are not connected to the PLC or fieldbus and hence have no impact on the actual process. 
