@@ -110,7 +110,7 @@ There are two ways to add a device in the Device Management Cloud for Azure IoT 
 
 #### Adding the device
 
-1. To add a device, we got back to "My Boxes" and click on "New Connection" of the respective box. 
+1. To add a device, we go back to "My Boxes" in the CloudRAIL dashboard and click on "New Connection" of the respective box. 
 2. The Box configuration should automatically detect a Temperature Sensor at Port 1. Chose "Temperature: TN7511" and click on Next Step button. 
 3. The next section allows us to chose at what frequency should the sensor send data to the cloud, either at a specified interval or when there is a change.
 4. Also add the device in the Azure IoT Central, by following: Devices --> Click on "New" --> Enter the specified details --> Click the "Create button"
