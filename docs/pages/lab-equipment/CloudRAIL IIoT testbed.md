@@ -79,7 +79,7 @@ The chosen Cloud Platform her eis Microsoft Azure. There is no specific motivati
 
 #### Creating an IoT Central Application
 1. Login to the [Microsoft Azure Portal](https://portal.azure.com/) using your KTH account. 
-2. After loggin in, click on "Create a resource" button and search for "IoT Central Application".
+2. After logging in, click on "Create a resource" button and search for "IoT Central Application".
 3. In the "IoT Central Application", click on "Add" to add the below details:
 	- Resource name, your IoT Central Application name.
 	- Application URL, can be same as the Resource Name.
