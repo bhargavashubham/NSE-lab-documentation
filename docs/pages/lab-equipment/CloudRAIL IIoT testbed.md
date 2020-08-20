@@ -141,12 +141,12 @@ One can also deploy an edge function in the CloudRAIL box to peform lightweight 
 ## Future Works
 
 1. Building an industrial physical process scenario: It is equally important to use a real physical process so that impacts are directly visible and the researcher or student has enough time to execute his attacks and to observe the effects. One can use the [Punching Machine with Conveyor Belt 24V - Simulation](https://www.fischertechnik.de/en/products/simulating/training-models/96785-sim-punching-machine-with-conveyor-belt-24v-simulation) which consists of a conveyor belt, two light-barrier, two limit-switches and two motors which can be connected with a PLC control 24V. 
-![alt text](images/PublishDeviceConveyerBelt.png)
+![alt text](images/ConveyerBelt.png)
 
 2. Industrial Retrofitting: The current setup has only one sensor. The future versions can have additional sensors to gather more data for IIoT applications like condition monitoring or preditive maintenance. They are completely separated from the actual production environment as they are not connected to the PLC or fieldbus and hence have no impact on the actual process. 
 ![alt text](images/Retro.png)
 
-3. Connecting it with AC1365 AS-Interface: The current setup can be connected to a AC1365 AS-Interface Profibus DP gateway with PLC (available in the lab) using a M12 Y-connection cable. This will require purchase of additional devices, but is totally feasible - [Energy monitoring](https://www.ifm.com/il/en/shared/technologies/the-y-path/energy-monitoring/energy-monitoring)
+3. Connecting it with AC1365 AS-Interface: The current setup can be connected to a AC1365 AS-Interface Profibus DP gateway with PLC (available in the lab) using a M12 Y-connection cable. However, this will require purchase of additional devices. More information can be found here - [Energy monitoring](https://www.ifm.com/il/en/shared/technologies/the-y-path/energy-monitoring/energy-monitoring).
 ![alt text](images/EnergyMonitoring.png)
 
 4. Connecting it with SIMATIC S7-1200 + KTP400 Basic Startkit: The video [Siemens S7-1200 with ifm Starter kit IO-Link master](https://www.youtube.com/watch?v=Zi_q3VkMvX0) clearly explains how this can be acheived. However, this might require purchase of new devices.
