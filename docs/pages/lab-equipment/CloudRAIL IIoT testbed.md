@@ -112,15 +112,44 @@ There are two ways to add a device in the Device Management Cloud for Azure IoT 
 
 1. To add a device, we got back to "My Boxes" and click on "New Connection" of the respective box. 
 2. The Box configuration should automatically detect a Temperature Sensor at Port 1. Chose "Temperature: TN7511" and click on Next Step button. 
-3. The next section allows us to chose at what frequency should the sensor send data to the cloud, either at a specified interval or when there is a change. 
+3. The next section allows us to chose at what frequency should the sensor send data to the cloud, either at a specified interval or when there is a change.
+4. Also add the device in the Azure IoT Central, by following: Devices --> Click on "New" --> Enter the specified details --> Click the "Create button"
+![alt text](images/CreateDevice1.png)
 
-## Possible attacks
+5. Next step is to choose the preferred cloud platform in the CloudRAIl dashboard and create a new device (Same name as the one created in Azure IoT Central).
+![alt text](images/CreateDevice.png)
+
+5. Once the device has been successfully created, we should be able to see the device metadata like Platform, Box, Device Info etc. The important information is MQTT topic subscribe or publish to device  depending on your device or the frequency selected.
+![alt text](images/DeviceMetadata.png)
+
+
+#### Subscribe to device
+Once the device has been added, data should automatically start coming in. Next step is to visualize this data in the best way possible.
+
+1. Go to Device template in Azure IoT Central and click on TN7511-read --> Overview --> Select the Telemetry you want to display --> Click on Add tile --> Save it --> Publish the device template
+![alt text](images/PublishDevice.png)
+![alt text](images/PublishDevice1.png)
+
+2. Once the device template is published, go to the device and visually see the data.
+
+
+#### Edge computing (OPTIONAL)
+One can also deploy an edge function in the CloudRAIL box to peform lightweight computations such as data transformations, arithmetic mean operations etc with the sensor data on the box itself. This way, the user can ensure that very minimal data is sent to the cloud and all the essential computation is done at the edge itself. More information can be found here - [Edge Computing](https://devices.cloudrail.com/documentation?service=EdgeComputing#edge1)
+![alt text](images/Edge.png)
 
 
 ## Future Works
 
-1. Retrofitting old machines
-2. Connecting it with PLC
+1. Building an industrial physical process scenario: It is equally important to use a real physical process so that impacts are directly visible and the researcher or student has enough time to execute his attacks and to observe the effects. One can use the [Punching Machine with Conveyor Belt 24V - Simulation](https://www.fischertechnik.de/en/products/simulating/training-models/96785-sim-punching-machine-with-conveyor-belt-24v-simulation) which consists of a conveyor belt, two light-barrier, two limit-switches and two motors which can be connected with a PLC control 24V. 
+![alt text](images/PublishDeviceConveyerBelt.png)
+
+2. Industrial Retrofitting: The current setup has only one sensor. The future versions can have additional sensors to gather more data for IIoT applications like condition monitoring or preditive maintenance. They are completely separated from the actual production environment as they are not connected to the PLC or fieldbus and hence have no impact on the actual process. 
+![alt text](images/Retro.png)
+
+3. Connecting it with AC1365 AS-Interface: The current setup can be connected to a AC1365 AS-Interface Profibus DP gateway with PLC (available in the lab) using a M12 Y-connection cable. This will require purchase of additional devices, but is totally feasible - [Energy monitoring](https://www.ifm.com/il/en/shared/technologies/the-y-path/energy-monitoring/energy-monitoring)
+![alt text](images/EnergyMonitoring.png)
+
+4. Connecting it with SIMATIC S7-1200 + KTP400 Basic Startkit: The video [Siemens S7-1200 with ifm Starter kit IO-Link master](https://www.youtube.com/watch?v=Zi_q3VkMvX0) clearly explains how this can be acheived. However, this might require purchase of new devices.
 
 ## References
 
@@ -129,4 +158,5 @@ There are two ways to add a device in the Device Management Cloud for Azure IoT 
 3. [Oops I Did it Again: Further Adventures in the Land of ICS Security Testbeds](https://dl.acm.org/doi/pdf/10.1145/3338499.3357355)
 4. [Quick Start Guide CloudRail.Box](https://cloudrail.com/quick-start-guide/)
 5. [Linking Cloud Platform to the Device Management Cloud](https://devices.cloudrail.com/documentation)
+6. [Punching Machine with Conveyor Belt 24V - Simulation](https://www.fischertechnik.de/en/products/simulating/training-models/96785-sim-punching-machine-with-conveyor-belt-24v-simulation)
 
