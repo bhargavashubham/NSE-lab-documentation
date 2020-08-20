@@ -147,6 +147,7 @@ One can also deploy an edge function in the CloudRAIL box to peform lightweight 
 ![alt text](images/Retro.png)
 
 3. Connecting it with AC1365 AS-Interface: The current setup can be connected to a AC1365 AS-Interface Profibus DP gateway with PLC (available in the lab) using a M12 Y-connection cable. However, this will require purchase of additional devices. More information can be found here - [Energy monitoring](https://www.ifm.com/il/en/shared/technologies/the-y-path/energy-monitoring/energy-monitoring).
+
 ![alt text](images/EnergyMonitoring.png)
 
 4. Connecting it with SIMATIC S7-1200 + KTP400 Basic Startkit: The video [Siemens S7-1200 with ifm Starter kit IO-Link master](https://www.youtube.com/watch?v=Zi_q3VkMvX0) clearly explains how this can be acheived. However, this might require purchase of new devices.
